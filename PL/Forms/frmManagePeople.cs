@@ -18,8 +18,13 @@ namespace PL.Forms
             InitializeComponent();
         }
 
+        public event EventHandler FormClosed;
+
+      
         private void btnClose_Click(object sender, EventArgs e)
         {
+
+            FormClosed?.Invoke(this, EventArgs.Empty);
             this.Close();
         }
     }

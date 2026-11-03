@@ -65,7 +65,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap account_settings_64 {
             get {
-                object obj = ResourceManager.GetObject("account_settings 64", resourceCulture);
+                object obj = ResourceManager.GetObject("account_settings_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace PL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AddPerson_32 {
+        internal static System.Drawing.Bitmap Add_Person_40 {
             get {
-                object obj = ResourceManager.GetObject("AddPerson 32", resourceCulture);
+                object obj = ResourceManager.GetObject("Add_Person_40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Applications_64 {
             get {
-                object obj = ResourceManager.GetObject("Applications 64", resourceCulture);
+                object obj = ResourceManager.GetObject("Applications_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Close_32 {
             get {
-                object obj = ResourceManager.GetObject("Close 32", resourceCulture);
+                object obj = ResourceManager.GetObject("Close_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,27 +105,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Drivers_64 {
             get {
-                object obj = ResourceManager.GetObject("Drivers 64", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Manage_People {
-            get {
-                object obj = ResourceManager.GetObject("Manage People", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap People_400 {
-            get {
-                object obj = ResourceManager.GetObject("People 400", resourceCulture);
+                object obj = ResourceManager.GetObject("Drivers_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +115,7 @@ namespace PL.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap People_64 {
             get {
-                object obj = ResourceManager.GetObject("People 64", resourceCulture);
+                object obj = ResourceManager.GetObject("People_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,19 +123,9 @@ namespace PL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Users_2_400 {
+        internal static System.Drawing.Bitmap Users_64 {
             get {
-                object obj = ResourceManager.GetObject("Users 2 400", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Users_2_64 {
-            get {
-                object obj = ResourceManager.GetObject("Users 2 64", resourceCulture);
+                object obj = ResourceManager.GetObject("Users_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
