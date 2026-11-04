@@ -267,6 +267,7 @@
             this.btnAddPerson.Size = new System.Drawing.Size(75, 49);
             this.btnAddPerson.TabIndex = 12;
             this.btnAddPerson.UseVisualStyleBackColor = true;
+            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
             // 
             // comboBox1
             // 

@@ -1,4 +1,5 @@
-﻿using PL.Helpers;
+﻿using PL.Forms.People;
+using PL.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,6 +73,13 @@ namespace PL.Forms
 
             FormClosed?.Invoke(this, EventArgs.Empty);
             this.Close();
+        }
+
+        private void btnAddPerson_Click(object sender, EventArgs e)
+        {
+            frmAddPerson frmAddPerson = new frmAddPerson();
+            frmAddPerson.ShowDialog();
+
         }
     }
 }

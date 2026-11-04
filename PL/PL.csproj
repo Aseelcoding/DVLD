@@ -54,10 +54,16 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmManagePeople.cs">
+    <Compile Include="Forms\People\frmAddPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmManagePeople.Designer.cs">
+    <Compile Include="Forms\People\frmAddPerson.Designer.cs">
+      <DependentUpon>frmAddPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\People\frmManagePeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\People\frmManagePeople.Designer.cs">
       <DependentUpon>frmManagePeople.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ErrorHandler.cs" />
@@ -66,16 +72,28 @@
     <Compile Include="Helpers\UIHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersControls\ucPersonEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\ucPersonEditor.Designer.cs">
+      <DependentUpon>ucPersonEditor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmManagePeople.resx">
+    <EmbeddedResource Include="Forms\People\frmAddPerson.resx">
+      <DependentUpon>frmAddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\People\frmManagePeople.resx">
       <DependentUpon>frmManagePeople.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\ucPersonEditor.resx">
+      <DependentUpon>ucPersonEditor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,13 +114,43 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UsersControls\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{5875ebb1-01be-2d17-3613-d0bad09cbb40}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Country_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gender_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
