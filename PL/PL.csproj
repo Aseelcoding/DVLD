@@ -60,6 +60,9 @@
     <Compile Include="Forms\frmManagePeople.Designer.cs">
       <DependentUpon>frmManagePeople.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ErrorHandler.cs" />
+    <Compile Include="Helpers\GlobalExceptionHandler.cs" />
+    <Compile Include="Helpers\Logging\Logger.cs" />
     <Compile Include="Helpers\UIHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
