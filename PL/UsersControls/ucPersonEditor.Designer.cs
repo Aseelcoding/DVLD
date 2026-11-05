@@ -47,7 +47,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.lbLinkRemoveImage = new System.Windows.Forms.LinkLabel();
             this.lbLinkSetImage = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picPerson = new System.Windows.Forms.PictureBox();
             this.dateBirthOfDate = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.txtNationalNo = new System.Windows.Forms.TextBox();
@@ -64,7 +64,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerson)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -123,7 +123,7 @@
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.lbLinkRemoveImage);
             this.panel1.Controls.Add(this.lbLinkSetImage);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.picPerson);
             this.panel1.Controls.Add(this.dateBirthOfDate);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.txtNationalNo);
@@ -152,7 +152,7 @@
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(101, 34);
-            this.btnClose.TabIndex = 31;
+            this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = true;
@@ -167,7 +167,7 @@
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 34);
-            this.btnSave.TabIndex = 30;
+            this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
@@ -179,16 +179,16 @@
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(580, 100);
-            this.textBox2.TabIndex = 29;
+            this.textBox2.TabIndex = 9;
             // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Image = global::PL.Properties.Resources.Address_32;
             this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label15.Location = new System.Drawing.Point(25, 215);
+            this.label15.Location = new System.Drawing.Point(14, 215);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(148, 23);
+            this.label15.Size = new System.Drawing.Size(159, 23);
             this.label15.TabIndex = 28;
             this.label15.Text = "Address:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,56 +199,58 @@
             this.textBox1.MaxLength = 50;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 25);
-            this.textBox1.TabIndex = 27;
+            this.textBox1.TabIndex = 7;
             // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Image = global::PL.Properties.Resources.Email_32;
             this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label14.Location = new System.Drawing.Point(25, 171);
+            this.label14.Location = new System.Drawing.Point(14, 171);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(148, 23);
+            this.label14.Size = new System.Drawing.Size(159, 23);
             this.label14.TabIndex = 26;
             this.label14.Text = "Email:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // radbtnFemale
             // 
+            this.radbtnFemale.Checked = true;
             this.radbtnFemale.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radbtnFemale.Image = global::PL.Properties.Resources.Woman_32;
             this.radbtnFemale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radbtnFemale.Location = new System.Drawing.Point(271, 111);
+            this.radbtnFemale.Location = new System.Drawing.Point(271, 118);
             this.radbtnFemale.Name = "radbtnFemale";
             this.radbtnFemale.Size = new System.Drawing.Size(123, 47);
             this.radbtnFemale.TabIndex = 25;
+            this.radbtnFemale.TabStop = true;
             this.radbtnFemale.Text = "Female";
             this.radbtnFemale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radbtnFemale.UseVisualStyleBackColor = true;
+            this.radbtnFemale.CheckedChanged += new System.EventHandler(this.radbtnFemale_CheckedChanged);
             // 
             // radbtnMale
             // 
-            this.radbtnMale.Checked = true;
             this.radbtnMale.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radbtnMale.Image = global::PL.Properties.Resources.Man_32;
             this.radbtnMale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.radbtnMale.Location = new System.Drawing.Point(159, 111);
+            this.radbtnMale.Location = new System.Drawing.Point(159, 118);
             this.radbtnMale.Name = "radbtnMale";
             this.radbtnMale.Size = new System.Drawing.Size(106, 47);
             this.radbtnMale.TabIndex = 24;
-            this.radbtnMale.TabStop = true;
             this.radbtnMale.Text = "Male";
             this.radbtnMale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radbtnMale.UseVisualStyleBackColor = true;
+            this.radbtnMale.CheckedChanged += new System.EventHandler(this.radbtnMale_CheckedChanged);
             // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Image = global::PL.Properties.Resources.Gender_32;
             this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label13.Location = new System.Drawing.Point(25, 130);
+            this.label13.Location = new System.Drawing.Point(14, 130);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(148, 23);
+            this.label13.Size = new System.Drawing.Size(159, 23);
             this.label13.TabIndex = 23;
             this.label13.Text = "Gender:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -262,7 +264,7 @@
             this.cmbCountry.Location = new System.Drawing.Point(580, 168);
             this.cmbCountry.Name = "cmbCountry";
             this.cmbCountry.Size = new System.Drawing.Size(180, 31);
-            this.cmbCountry.TabIndex = 22;
+            this.cmbCountry.TabIndex = 8;
             // 
             // label12
             // 
@@ -278,11 +280,12 @@
             // 
             // maskedTextBox1
             // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBox1.Location = new System.Drawing.Point(580, 129);
             this.maskedTextBox1.Mask = "000000000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(180, 25);
-            this.maskedTextBox1.TabIndex = 20;
+            this.maskedTextBox1.Size = new System.Drawing.Size(180, 27);
+            this.maskedTextBox1.TabIndex = 6;
             this.maskedTextBox1.ValidatingType = typeof(int);
             // 
             // label11
@@ -317,13 +320,14 @@
             this.lbLinkSetImage.TabStop = true;
             this.lbLinkSetImage.Text = "Set Image";
             // 
-            // pictureBox1
+            // picPerson
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(780, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 251);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.picPerson.Location = new System.Drawing.Point(780, 64);
+            this.picPerson.Name = "picPerson";
+            this.picPerson.Size = new System.Drawing.Size(180, 251);
+            this.picPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPerson.TabIndex = 16;
+            this.picPerson.TabStop = false;
             // 
             // dateBirthOfDate
             // 
@@ -332,7 +336,7 @@
             this.dateBirthOfDate.Location = new System.Drawing.Point(580, 76);
             this.dateBirthOfDate.Name = "dateBirthOfDate";
             this.dateBirthOfDate.Size = new System.Drawing.Size(180, 30);
-            this.dateBirthOfDate.TabIndex = 15;
+            this.dateBirthOfDate.TabIndex = 5;
             this.dateBirthOfDate.Value = new System.DateTime(2026, 11, 4, 0, 0, 0, 0);
             // 
             // label10
@@ -353,27 +357,29 @@
             this.txtNationalNo.MaxLength = 20;
             this.txtNationalNo.Name = "txtNationalNo";
             this.txtNationalNo.Size = new System.Drawing.Size(180, 25);
-            this.txtNationalNo.TabIndex = 13;
+            this.txtNationalNo.TabIndex = 4;
             // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Image = global::PL.Properties.Resources.Number_32;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label9.Location = new System.Drawing.Point(25, 80);
+            this.label9.Location = new System.Drawing.Point(10, 80);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 23);
+            this.label9.Size = new System.Drawing.Size(163, 23);
             this.label9.TabIndex = 12;
             this.label9.Text = "National No:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(780, 33);
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(775, 33);
             this.txtLastName.MaxLength = 20;
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(180, 25);
-            this.txtLastName.TabIndex = 11;
+            this.txtLastName.Size = new System.Drawing.Size(180, 27);
+            this.txtLastName.TabIndex = 3;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // label8
             // 
@@ -387,11 +393,13 @@
             // 
             // txtThirdName
             // 
-            this.txtThirdName.Location = new System.Drawing.Point(580, 33);
+            this.txtThirdName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThirdName.Location = new System.Drawing.Point(578, 33);
             this.txtThirdName.MaxLength = 20;
             this.txtThirdName.Name = "txtThirdName";
-            this.txtThirdName.Size = new System.Drawing.Size(180, 25);
-            this.txtThirdName.TabIndex = 9;
+            this.txtThirdName.Size = new System.Drawing.Size(180, 27);
+            this.txtThirdName.TabIndex = 2;
+            this.txtThirdName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // label7
             // 
@@ -405,11 +413,13 @@
             // 
             // txtSecondName
             // 
-            this.txtSecondName.Location = new System.Drawing.Point(380, 33);
+            this.txtSecondName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSecondName.Location = new System.Drawing.Point(382, 33);
             this.txtSecondName.MaxLength = 20;
             this.txtSecondName.Name = "txtSecondName";
-            this.txtSecondName.Size = new System.Drawing.Size(180, 25);
-            this.txtSecondName.TabIndex = 7;
+            this.txtSecondName.Size = new System.Drawing.Size(180, 27);
+            this.txtSecondName.TabIndex = 1;
+            this.txtSecondName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // label6
             // 
@@ -423,11 +433,13 @@
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(180, 33);
             this.txtFirstName.MaxLength = 20;
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(180, 25);
-            this.txtFirstName.TabIndex = 5;
+            this.txtFirstName.Size = new System.Drawing.Size(180, 27);
+            this.txtFirstName.TabIndex = 0;
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // label5
             // 
@@ -444,9 +456,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Image = global::PL.Properties.Resources.Person_32;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Location = new System.Drawing.Point(25, 30);
+            this.label4.Location = new System.Drawing.Point(14, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 23);
+            this.label4.Size = new System.Drawing.Size(159, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Name :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,7 +490,7 @@
             this.tableLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerson)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,7 +521,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.LinkLabel lbLinkRemoveImage;
         private System.Windows.Forms.LinkLabel lbLinkSetImage;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picPerson;
         private System.Windows.Forms.ComboBox cmbCountry;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.RadioButton radbtnMale;
