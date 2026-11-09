@@ -1,5 +1,8 @@
 <Solution>
   <Project Path="BLL/BLL.csproj" />
   <Project Path="DAL/DAL.csproj" />
+  <Project Path="Entities/Entities.csproj" Id="5d3cd850-5494-4cad-b1da-2459259fe091" />
   <Project Path="PL/PL.csproj" Id="31285515-8253-4790-9c4b-ac96d1acfb4e" />
+  <Project Path="P_Exceptions/P_Exceptions.csproj" Id="ae1bf26c-4659-4a0f-bf8c-1c8565c3bd96" />
+  <Project Path="P_utilities/P_utilities.csproj" Id="e8a864b0-683f-47e9-9013-aebab00da887" />
 </Solution>

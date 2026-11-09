@@ -1,4 +1,6 @@
-﻿namespace PL.Forms.People
+﻿using Entities;
+
+namespace PL.Forms.People
 {
     partial class frmAddPerson
     {
@@ -38,6 +40,7 @@
             this.ucPersonAdd.Name = "ucPersonAdd";
             this.ucPersonAdd.Size = new System.Drawing.Size(1082, 603);
             this.ucPersonAdd.TabIndex = 0;
+            this.ucPersonAdd.Tag = "Add";
             // 
             // frmAddPerson
             // 

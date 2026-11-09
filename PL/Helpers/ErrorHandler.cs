@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using BLL.Exceptions;
+using P_Exceptions;
 using PL.Helpers.Logging;
 
 namespace PL.Helpers

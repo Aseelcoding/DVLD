@@ -8,6 +8,8 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\DAL\DAL.csproj" />
+		<ProjectReference Include="..\P_Exceptions\P_Exceptions.csproj" />
+		<ProjectReference Include="..\P_utilities\P_utilities.csproj" />
 	</ItemGroup>
 
 </Project>

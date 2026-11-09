@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BLL.Exceptions;
+using P_Exceptions;
 using DAL;
 namespace BLL
 {
@@ -13,6 +13,8 @@ namespace BLL
         public static  DataTable GetAllPeople() 
         {
             DataTable dtPeople;
+
+
             try 
             {
                 dtPeople= DAL.DALPeople.GetAllPeople();

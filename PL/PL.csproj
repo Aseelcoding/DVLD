@@ -36,6 +36,7 @@
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\PersonEditorMode.cs" />
     <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +97,7 @@
     <EmbeddedResource Include="UsersControls\ucPersonEditor.resx">
       <DependentUpon>ucPersonEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Helpers\DisplayHelper.cs" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -117,6 +120,18 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{5875ebb1-01be-2d17-3613-d0bad09cbb40}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{5d3cd850-5494-4cad-b1da-2459259fe091}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\P_Exceptions\P_Exceptions.csproj">
+      <Project>{ae1bf26c-4659-4a0f-bf8c-1c8565c3bd96}</Project>
+      <Name>P_Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\P_utilities\P_utilities.csproj">
+      <Project>{e8a864b0-683f-47e9-9013-aebab00da887}</Project>
+      <Name>P_utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\default_Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

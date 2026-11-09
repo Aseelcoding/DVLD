@@ -1,4 +1,5 @@
-﻿using PL.UsersControls;
+﻿using Entities;
+using PL.UsersControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,14 +16,25 @@ namespace PL.Forms.People
     {
         public frmAddPerson()
         {
+          
             InitializeComponent();
             ucPersonAdd.Title = "Add New Person";
-            ucPersonAdd.UcClosed += UcPersonAdd_UcClosed;
+            ucPersonAdd.Mode = Enums.PersonEditorMode.Add;
+            ucPersonAdd.UcClosed += ucPersonAdd_UcClosed;
+            ucPersonAdd.SavePerson += SavePerson;
         }
 
-        private void UcPersonAdd_UcClosed(object sender, EventArgs e)
+        
+        private void ucPersonAdd_UcClosed(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void SavePerson(Person person)
+        {
+            // Handle the saved person object here
+           
+
+          
         }
 
     }
